@@ -34,7 +34,7 @@ SGL UI库特点:
    docs/005-label.md
    docs/006-led.md
    docs/007-switch.md
-   docs/008-extimg.md
+   docs/008-img.md
    docs/009-msgbox.md
    docs/010-line.md
    docs/011-canvas.md
@@ -64,7 +64,6 @@ SGL UI库特点:
    docs/035-rectangle.md
    docs/036-scope.md
    docs/037-scroll.md
-   docs/038-extimg.md
    docs/039-unzipimage.md
 
 QQ交流群
