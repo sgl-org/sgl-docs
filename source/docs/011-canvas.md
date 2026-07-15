@@ -1,5 +1,7 @@
 ## canvas控件
+
 canvas控件实现定制化的界面，例如用户可能需要实现一个音乐频谱，
+
 ```c
 void painter_func(sgl_surf_t *surf, sgl_area_t *area, sgl_obj_t *obj)
 {
@@ -13,7 +15,9 @@ sgl_obj_set_pos(canvas, 10, 10);
 sgl_obj_set_size(canvas, 200, 100);
 sgl_canvas_set_painter_cb(canvas, painter_func);
 ```
+
 上面的代码中，使用sgl_canvas_set_painter_cb()函数设置绘制函数，绘制函数的参数说明如下：   
+
 - 1. surf: 绘制的缓冲区
 - 2. area: 绘制的区域
 - 3. obj: 绘制的控件对象      
@@ -22,4 +26,5 @@ sgl_canvas_set_painter_cb(canvas, painter_func);
 上面的painter_func函数使用sgl_draw_fill_hline()函数绘制水平线，每次间隔10个像素，颜色为黑色，透明度为255。
 
 ### 区域更新
+
 当绘制的部分区域改变时，需要调用sgl_obj_update_area()函数来更新区域，如何需要更新整个控件，请使用sgl_obj_set_dirty()函数来更新整个控件区域。

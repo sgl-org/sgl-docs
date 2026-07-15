@@ -30,24 +30,11 @@
 
 ### MCU平台
 
-1. 建议下载SGLmain[最新代码压缩包](https://github.com/sgl-org/sgl/archive/refs/tags/20260201.zip)
+1. 建议下载SGLmain[最新代码压缩包](https://github.com/sgl-org/sgl/archive/refs/heads/main.zip)
 
 2. 解压后如下文件结构：
    
    ```textile
-   source
-   ├─sgl.h                 SGL头文件
-   ├─sgl_config.h          SGL配置文件
-   ├─core                  核心库文件
-   ├─draw                  底层绘制库文件
-   ├─fonts                 字体库文件
-   ├─include               头文件
-   ├─misc                  杂项文件
-   ├─mm                    内存管理文件
-   │  ├─lwmem              lwmem内存管理库文件
-   │  ├─other              其他内存管理库文件
-   │  └─tlsf               tlsf内存管理库文件
-   └
    source
    ├─sgl.h                     SGL统一头文件
    ├─sgl_config.h              SGL配置文件
