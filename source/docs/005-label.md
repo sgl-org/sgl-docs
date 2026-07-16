@@ -143,22 +143,18 @@ sgl_label_set_text_offset(label, 10, 10);
 
 ### 使用label_ext支持文本旋转
 
-label_ext较label支持文本任意角旋转，使用`sgl_label_ext_set_text_rotation()`函数设置文本旋转角度，如下：
+label_ext相较label支持文本的任意角旋转，使用`sgl_label_ext_set_text_rotation()`函数设置文本旋转角度，如下：
 
 ```c
-sgl_obj_t *label = sgl_label_create(NULL);
+sgl_obj_t *label = sgl_label_ext_create(NULL);
 sgl_obj_set_pos(label, 250, 100);
 sgl_obj_set_size(label, 100, 50);
-sgl_label_set_font(label, &consolas24);
-sgl_label_set_text(label, "label");
-sgl_label_set_bg_color(label, SGL_COLOR_RED);
-sgl_label_set_radius(label, 25);
-sgl_label_set_text_color(label, SGL_COLOR_WHITE);
-sgl_label_set_text_rotation(label, 45);
-```
-
-```{tip}
-文本旋转功能需要在sgl_cfgfix.h中开启CONFIG_SGL_LABEL_ROTATION配置项。
+sgl_label_ext_set_font(label, &consolas24);
+sgl_label_ext_set_text(label, "label");
+sgl_label_ext_set_bg_color(label, SGL_COLOR_RED);
+sgl_label_ext_set_radius(label, 25);
+sgl_label_ext_set_text_color(label, SGL_COLOR_WHITE);
+sgl_label_ext_set_text_rotation(label, 45);
 ```
 
 上面的代码中，sgl_label_set_text_rotation()函数设置Label的文本旋转角度为45度，效果如下：           

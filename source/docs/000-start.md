@@ -504,10 +504,8 @@ LCD支持直接向屏幕控制器显存直接写入数据，对于有LCD控制�
 2. 注册Framebuffer设备，代码如下：
 
 ```c
-void lcd_flush(sgl_area_t *area, sgl_color_t *src)          
-{
-    你需要刷新LCD，这里省略代码
-    // 通知SGL刷新完成
+void lcd_flush(sgl_area_t *area, sgl_color_t *src){
+    /*自行实现刷新屏幕代码，然后通知SGL刷新完成*/
     sgl_fbdev_flush_ready();
 }
 
