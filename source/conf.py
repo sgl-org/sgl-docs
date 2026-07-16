@@ -29,6 +29,13 @@ language = 'zh_CN'
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "chenjx-bwdsm", # Username
+    "github_repo": "sgl-docs", # Repo name
+    "github_version": "main", # Version
+    "conf_py_path": "/source/", # Path in the checkout to the docs root
+}
 html_static_path = ['_static']
 templates_path = ['_templates']
 exclude_patterns = []
