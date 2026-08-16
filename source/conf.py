@@ -11,7 +11,7 @@ import sphinx_rtd_theme
 project = 'SGL'
 copyright = '2026, SGL All contributors'
 author = 'SGL Team'
-release = 'SGL_20260101'
+# release = 'SGL_20260101'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -31,7 +31,7 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_context = {
     "display_github": True, # Integrate GitHub
-    "github_user": "chenjx-bwdsm", # Username
+    "github_user": "sgl-org", # Username
     "github_repo": "sgl-docs", # Repo name
     "github_version": "main", # Version
     "conf_py_path": "/source/", # Path in the checkout to the docs root
