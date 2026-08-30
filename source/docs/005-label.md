@@ -230,3 +230,4 @@ buf[5] = '\0';
 /* 更新文本区域 */
 sgl_label_update_text(label);
 ```
+DEMO：https://github.com/sgl-org/sgl-document/blob/main/SGL_DEMO/sgl_label_demo.c
